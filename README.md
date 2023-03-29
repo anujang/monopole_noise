@@ -36,7 +36,7 @@ Noise in system found through Fourier transform of autocorrelation function:
 
 From this the decay exponent is found to be simply
 
-$ P(\omega) \propto 1/\omega^\beta $
+P(\omega) \propto 1/\omega^\beta
 
 Common decay exponent/noise values are known to be:
 
