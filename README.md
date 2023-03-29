@@ -5,5 +5,5 @@ In this repo, there are jupyter notebook files, which can be run to find a varie
 
 A monte carlo method is used to simulate the behaviour of the monopoles utilising the Hamilonian of systems including the Ising and nearest neighbour models. 
 
-This result was later then independantly confirmed by this paper https://arxiv.org/pdf/2211.09784.pdf. //
+This result was later then independantly confirmed by this paper https://arxiv.org/pdf/2211.09784.pdf. /n
 This code and results were part of my 4th year dissertation for my Physics MPhys at Cardiff University. Initially I had planned to publish these results but this paper had beat us to it. 
