@@ -49,11 +49,46 @@ Common decay exponent/noise values are known to be:
 ## Nyquist frquency
 
 This is an important topic to understand for this project
-Arises from the rate at which we must sample for Fourier transform 
-Too slow, get aliasing as seen here
-Too fast, oversample and go past real Nyquist frequency and get nonsense results
-![image](https://user-images.githubusercontent.com/99356066/228624004-b078bec3-87fa-46ff-a428-e108495e7aac.png)
 
+Arises from the rate at which we must sample for Fourier transform 
+
+Aliasing: undersampling of measurements leading to incorrect reconstruction of data.
+
+Too slow, get aliasing as seen here
+
+<img width="405" alt="Screenshot 2023-03-29 at 18 46 43" src="https://user-images.githubusercontent.com/99356066/228624212-d0501c01-28ce-4fc3-90e0-808164df948c.png">
+
+
+Too fast, oversample and go past real Nyquist frequency and get nonsense results.
+Past the Nyquist frequency, data reflects due to Fourier transform..
+
+<img width="404" alt="Screenshot 2023-03-29 at 18 47 13" src="https://user-images.githubusercontent.com/99356066/228624329-94edafd4-9e29-49d5-bf1d-7422aef2f8b0.png">
+
+# Measurement per MC Step
+
+Measuring once per MC step gave a noise of $ \beta = 0.950 +- 0.017 $, which agrees with literature, and indicates pink noise, which makes sense for the probabilistic nature of magnetic monopoles.
+
+<img width="508" alt="image" src="https://user-images.githubusercontent.com/99356066/228624480-f895f2bc-3888-4509-9896-3428f5aec5bb.png">
+
+
+# Measurement per Attempted Flip
+
+Before Nyquist Frequency: 𝛽=0.947±0.019
+After Nyquist Frequency: 𝛽=1.965±0.021
+
+As seen from the results here, when one measures once per attempted flip, there is an overmeasurement by a factor of $L^2$. This is seen as if you take the plateau in the same place as before and measure the beta value, it is found to be around 2, which makes no sense for a system of magentic monopoles. If the Nyquist frequecy is remembered and applied, it is obvious there is oversampling by this factor, and finding the decay exponent before the nonsensical data past the Nyquist frequency, yields values of around 1, which seems to agree with the results obtained in the previous section. This is further seen in the follow section, across a range of applied magnetic fields (as a function of temperature)
+
+
+<img width="526" alt="image" src="https://user-images.githubusercontent.com/99356066/228624623-52b97f19-6f3b-496e-9976-1bc801cd6480.png">
+
+#Comparison of Methods
+
+It becomes more obvious in these images, that the method from Samarakoon et al, was infact wrong, they were only measuring the mathematical nonsense which occurs past the Nyquist frequency, which simply occurs as a byproduct of the fourier transform invovled in the MC steps. The true decay constant nature of a monopole system lies around 1. It is well established in literature that monopole systems are not random (i.e., an unconstrained random walk system will have a decay exponent of 2, as it is entirely random). Monopoles have memory and therefore this decay exponent must always be below 2. 
+
+<img width="644" alt="image" src="https://user-images.githubusercontent.com/99356066/228624789-0115939e-ed17-470f-96d0-94c57b84f5bb.png">
+
+
+<img width="640" alt="image" src="https://user-images.githubusercontent.com/99356066/228624821-1050b6a1-ce4e-4b4b-89b7-42fd1a26ae35.png">
 
 
 This result was later then independantly confirmed by this paper https://arxiv.org/pdf/2211.09784.pdf. 
