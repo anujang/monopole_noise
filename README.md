@@ -15,12 +15,25 @@ This is the main model used, where atomic spins live along the edge of the verti
 This modal can be easily used to there being a finite number of configurations possible for the monopole orientations. This is known as the 16 vertex model, in the following diagram. 
 
 <img width="433" alt="Screenshot 2023-03-29 at 18 33 41" src="https://user-images.githubusercontent.com/99356066/228621086-3ccde1f9-ad2f-41d7-aaaa-4f4d2e6151d8.png">
+[D. Levis. Two-dimensional Spin Ice and the Sixteen-Vertex Model. PhD thesis, Universite Pierre et Marie Curie - Paris VI, (2012).]
 
 # Monte Carlo Method
 Since all configurations are known, a single point is initally chosen and its energy is found. Then a flip of spin is attempted and the cost of energy is found, only if the cost is negative, the flip is allowed. (for more info, see disseration/powerpoint in the dissertation folder)
 Each monte carlo step reppresents one time step in real life. To compare the two papers mentioned at the start, the measurement of total magnetisation in the lattice is measured once each MC time step and each time a flip is attempted. Bearing in mind, in each MC step, L^2 flips are attempted (where L is length of lattice)
 
+<img width="281" alt="Screenshot 2023-03-29 at 18 40 14" src="https://user-images.githubusercontent.com/99356066/228622545-53dfd5eb-e421-4144-b394-b1f2c1162d6c.png">
+
+[M. Goryca, X. Zhang, J. Li, A. L. Balk, J. D. Watts, C. Leighton, C. Nisoli, P. Schiffer, and S. A. Crooker. Field-induced magnetic monopole plasma in artificial spin ice. Phys. Rev. X, 11:011042, March 2021.]
+
 The dynamics of the monopoles are found by apply a magnetic field onto the material and varying its strenght, which is emulated via $|B_x| + |B_y| \propto 4(J_1 - J_2) = 3.2K_b T $
+
+# Power Spectral Density
+Noise in system found through Fourier transform of autocorrelation function:
+𝐶(𝜏)= ⟨𝑀(𝑡)𝑀(𝑡+𝜏)⟩
+
+𝑃(𝜔)=𝐶 ̂(𝜔)=1/𝐿 |∫_0^𝐿▒〖𝑀(𝑡) 𝑒^𝑖𝜔𝑡 𝑑𝑡〗|^2
+
+
 
 This result was later then independantly confirmed by this paper https://arxiv.org/pdf/2211.09784.pdf. 
 
