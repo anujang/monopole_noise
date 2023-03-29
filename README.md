@@ -29,9 +29,30 @@ The dynamics of the monopoles are found by apply a magnetic field onto the mater
 
 # Power Spectral Density
 Noise in system found through Fourier transform of autocorrelation function:
+
 𝐶(𝜏)= ⟨𝑀(𝑡)𝑀(𝑡+𝜏)⟩
 
-𝑃(𝜔)=𝐶 ̂(𝜔)=1/𝐿 |∫_0^𝐿▒〖𝑀(𝑡) 𝑒^𝑖𝜔𝑡 𝑑𝑡〗|^2
+𝑃(𝜔)=𝐶 ̂(𝜔)=1/𝐿 |∫_0^𝐿〖𝑀(𝑡) 𝑒^𝑖𝜔𝑡 𝑑𝑡〗|^2
+
+From this the decay exponent is found to be simply
+
+$ P(\omega) \propto 1/\omega^\beta $
+
+Common decay exponent/noise values are known to be:
+
+0 - White
+
+1 - Pink
+
+2 - Red/Brownian, i.e., random motion
+
+## Nyquist frquency
+
+This is an important topic to understand for this project
+Arises from the rate at which we must sample for Fourier transform 
+Too slow, get aliasing as seen here
+Too fast, oversample and go past real Nyquist frequency and get nonsense results
+![image](https://user-images.githubusercontent.com/99356066/228624004-b078bec3-87fa-46ff-a428-e108495e7aac.png)
 
 
 
