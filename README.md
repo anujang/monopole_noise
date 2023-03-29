@@ -3,7 +3,7 @@ Modelling the static and dynamic change of monopole movement in a 2D square latt
 
 In this repo, there are jupyter notebook files, which can be run to find a variety of things, such as the behaviour of monopoles in 2D lattices. Due to noise variation, ideally, this is run on a HCP and averaged using the bash script provided. The averaged data file is then exported from the HCP and analysed using the python files to obtain useful graphs, e.g., change in power spectral density aka noise. 
 
-A monte carlo method is used to simulate the behaviour of the monopoles utilising the Hamilonian of systems including the Ising and nearest neighbour models. 
+A monte carlo method is used to simulate the behaviour of the monopoles utilising the Hamilonian of systems including the Ising and nearest neighbour models. The material simulated is called a spin ice, which exists in real life, though very expensive. So it is simulated in 2D, since the effects leading to 'magnetic monopoles' can be seen clearly. 
 
 This result was later then independantly confirmed by this paper https://arxiv.org/pdf/2211.09784.pdf. 
 
